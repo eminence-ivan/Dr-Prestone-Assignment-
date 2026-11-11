@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Three - HTML Forms and Input Elements</title>
+</head>
+<body>
+
+    <!-- QUESTION THREE: HTML FORMS AND INPUT ELEMENTS -->
+    <section id="registration">
+        <h2>Student Registration Form</h2>
+        
+        <form action="#" method="POST">
+            <!-- (a) Student's full name using an appropriate text input (1 mark) -->
+            <p>
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter full name" required>
+            </p>
+
+            <!-- (b) Registration number using an appropriate input element (1 mark) -->
+            <p>
+                <label for="regno">Registration Number:</label><br>
+                <input type="text" id="regno" name="regno" placeholder="e.g., SCT211-0001/2024" required>
+            </p>
+
+            <!-- (c) Email address using an appropriate HTML5 input type (1 mark) -->
+            <p>
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" placeholder="student@example.com" required>
+            </p>
+
+            <!-- (d) Gender using radio buttons (1 mark) -->
+            <p>
+                <label>Gender:</label><br>
+                <input type="radio" id="male" name="gender" value="Male" required>
+                <label for="male">Male</label>
+                
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+                
+                <input type="radio" id="other" name="gender" value="Other">
+                <label for="other">Other</label>
+            </p>
+
+            <!-- (e) Academic programme using a dropdown list containing at least FOUR programmes (1 mark) -->
+            <p>
+                <label for="programme">Academic Programme:</label><br>
+                <select id="programme" name="programme" required>
+                    <option value="" disabled selected>-- Select a Programme --</option>
+                    <option value="Computer Science">BSc Computer Science</option>
+                    <option value="Information Technology">BSc Information Technology</option>
+                    <option value="Software Engineering">BSc Software Engineering</option>
+                    <option value="Data Science">BSc Data Science</option>
+                </select>
+            </p>
+
+            <!-- (f) Provide a submit button and a reset button (1 mark) -->
+            <p>
+                <input type="submit" value="Register Student">
+                <input type="reset" value="Clear Form">
+            </p>
+        </form>
+    </section>
+
+</body>
+</html>
